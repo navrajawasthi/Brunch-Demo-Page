@@ -25,6 +25,7 @@
             align-items: center;
             justify-content: center;
             outline: none;
+            transition: 0.5s ease-in-out;
         }
         .checkbox-wrapper label{
             color: #4c4c4c;
@@ -38,13 +39,15 @@
             font-family: 'fontAwesome';
             font-size: 50px;
             color: #fff;
-            display: none;
+            visibility: hidden;
+            opacity: 0;
         }
         input[type="checkbox"]:checked{
             background: #5bcd3e;
         }
         input[type="checkbox"]:checked:after{
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
         
 
@@ -64,7 +67,9 @@
 
 
 .radio-wrapper input[type="radio"] {
-	display: none;
+	transition: 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 .radio-wrapper label {
 	position: relative;
