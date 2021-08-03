@@ -10995,7 +10995,7 @@ img {
         .available-wrapper .food-detail .list-item .food-image img {
           transition: 0.5s ease-in-out; }
           .available-wrapper .food-detail .list-item .food-image img:hover {
-            transform: scale(1.2); }
+            transform: scale(1.2) rotate(20deg); }
         @media (max-width: 767px) {
           .available-wrapper .food-detail .list-item .food-image {
             width: 50%;
