@@ -271,6 +271,12 @@
                     background-color: rgba(255, 255, 255, 0.5);
                     backdrop-filter: blur(10px);
                 }
+                &:hover {
+                    h4,
+                    span {
+                        color: $color-dark-yellow;
+                    }
+                }
                 @include breakpoint(small) {
                     width: 50%;
                     padding: 100px 20px;
@@ -285,6 +291,7 @@
                 h4 {
                     font-weight: bold;
                     text-transform: uppercase;
+                    transition: 0.5s ease-in-out;
                 }
                 p {
                     font-size: 17px;
@@ -296,6 +303,7 @@
                     font-size: 16.5px;
                     font-weight: bold;
                     color: $color-dark-gray;
+                    transition: 0.5s ease-in-out;
                 }
             }
             .food-content-order {
