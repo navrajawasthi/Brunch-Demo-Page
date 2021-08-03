@@ -10667,9 +10667,22 @@ img {
       font-size: 21px;
       font-weight: bold;
       color: #2d2f2a;
-      transition: 0.5s ease-in-out; }
+      transition: 0.5s ease-in-out;
+      position: relative; }
       .footer-wrapper .footer-content a:hover {
         color: #ad6c12; }
+      .footer-wrapper .footer-content a:after {
+        content: "";
+        height: 2px;
+        display: block;
+        background: #ad6c12;
+        width: 0%;
+        transition: width 0.5s ease-in-out;
+        position: absolute;
+        bottom: 0; }
+      .footer-wrapper .footer-content a:hover:after {
+        width: 100%;
+        transition: width 0.5s ease-in-out; }
   .footer-wrapper .content-link {
     margin-left: -5px;
     /* Large Devices, Wide Screens */
