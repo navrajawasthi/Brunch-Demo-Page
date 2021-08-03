@@ -1,0 +1,875 @@
+//banner wrapper
+.banner-wrapper {
+    position: relative;
+    height: 998px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(medium) {
+        height: 600px;
+    }
+    @include breakpoint(iPhone5) {
+        height: 400px;
+    }
+
+    .banner-content {
+        position: absolute;
+        left: 50%;
+        top: 54.5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.82);
+        padding: 125px 0px;
+        width: 758px;
+        max-width: 100%;
+        @include breakpoint(medium) {
+            padding: 80px 0;
+            width: 500px;
+            top: 60%;
+        }
+        @include breakpoint(iPhone5) {
+            width: 300px;
+            padding: 50px 0;
+        }
+        h1 {
+            font-family: $font-family-cookie;
+            color: $color-gray;
+            text-transform: capitalize;
+            line-height: 0.7;
+        }
+        span {
+            color: $color-dark-yellow;
+            font-weight: 600;
+            font-size: 77.5px;
+            text-transform: uppercase;
+            display: block;
+            line-height: 1;
+            margin-bottom: 33px;
+            @include breakpoint(medium) {
+                font-size: 45px;
+            }
+            @include breakpoint(extrasmall) {
+                font-size: 30px;
+            }
+        }
+        a {
+            font-size: 38px;
+            font-weight: 600;
+            color: $color-gray;
+            text-transform: uppercase;
+            line-height: 1;
+            padding: 7px 24px;
+            background: $color-accent-white;
+            transition: 0.5s ease-in-out;
+            @include breakpoint(medium) {
+                font-size: 25px;
+            }
+            &:hover {
+                background-color: $color-dark-yellow;
+                color: $color-accent-white;
+            }
+        }
+    }
+}
+
+//indian food flavour
+.food-powder-wrapper {
+    background: $color-gray;
+    color: $color-accent-white;
+    padding: 70px 0 65px 0;
+    @include breakpoint(medium) {
+        padding: 50px 0;
+    }
+    .container {
+        max-width: 1275px;
+        .col-lg-6 {
+            @include breakpoint(small) {
+                &:nth-child(2n + 1) {
+                    order: 2;
+                }
+            }
+        }
+    }
+    .powder-content {
+        margin-top: 92px;
+        width: 553px;
+        max-width: 100%;
+
+        @include breakpoint(small) {
+            width: 100%;
+            margin-top: 30px;
+        }
+        h3 {
+            font-weight: bold;
+        }
+        p {
+            margin-top: 30px;
+            line-height: 1.74;
+            word-break: break-all;
+            letter-spacing: -0.2px;
+            @include breakpoint(medium) {
+                margin-top: 10px;
+            }
+        }
+    }
+    .powder-image {
+        width: 527px;
+        max-width: 100%;
+        height: 354px;
+        @include breakpoint(small) {
+            width: 100%;
+        }
+        @include breakpoint(extrasmall) {
+            height: 200px;
+        }
+    }
+}
+
+//Latest services with new flavour
+.services-wrapper {
+    padding: 98px 0;
+    background: #d4d8d9;
+    color: $color-gray;
+    @include breakpoint(medium) {
+        padding: 50px 0;
+    }
+    .row {
+        .services {
+            @include breakpoint(medium) {
+                margin-top: 30px;
+            }
+        }
+        .we-serves {
+            width: 304px;
+            max-width: 100%;
+            height: 100%;
+            @include breakpoint(medium) {
+                width: 100%;
+            }
+            .circle {
+                display: inline-block;
+                height: 31px;
+                width: 31px;
+                border-radius: 50%;
+                background: $color-gray;
+            }
+            h4 {
+                font-weight: bold;
+                line-height: 1.74;
+                margin-top: 16px;
+                margin-bottom: 24px;
+                letter-spacing: -0.2px;
+                @include breakpoint(medium) {
+                    margin: 10px 0;
+                }
+            }
+            p {
+                font-size: 17px;
+                line-height: 1.47;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        :nth-child(2) {
+            .we-serves {
+                margin-left: 25px;
+                @media (max-width: 1366px) {
+                    margin-left: 0;
+                }
+            }
+        }
+        :nth-child(3) {
+            .we-serves {
+                margin-left: 50px;
+                @media (max-width: 1366px) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+//food available wrapper
+.available-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 88px 0;
+    @include breakpoint(medium) {
+        padding: 50px 0;
+    }
+    .food-detail {
+        background-color: rgba(255, 255, 255, 0.82);
+        padding-top: 43px;
+        text-align: center;
+        h2 {
+            font-family: $font-family-cookie;
+            color: $color-dark-gray;
+            line-height: 1;
+            letter-spacing: -0.2px;
+            @include breakpoint(medium) {
+                line-height: 1.5;
+            }
+        }
+
+        span {
+            font-size: 48px;
+            font-weight: 600;
+            color: $color-dark-yellow;
+            text-transform: uppercase;
+            line-height: 0.5;
+            letter-spacing: -0.5px;
+            margin-bottom: 60px;
+            display: block;
+            @include breakpoint(medium) {
+                font-size: 45px;
+                margin-bottom: 30px;
+            }
+            @include breakpoint(extrasmall) {
+                font-size: 30px;
+            }
+        }
+        .list-item {
+            display: flex;
+            @include breakpoint(small) {
+                flex-wrap: wrap;
+            }
+            @include breakpoint(smaller) {
+                flex-direction: column;
+            }
+            .food-image {
+                width: 270px;
+                height: auto;
+                overflow: hidden;
+                cursor: pointer;
+                img {
+                    transition: 0.5s ease-in-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                @include breakpoint(small) {
+                    width: 50%;
+                    margin-bottom: 20px;
+                }
+                @include breakpoint(smaller) {
+                    width: 100%;
+                    height: 400px;
+                }
+                @include breakpoint(extrasmall) {
+                    height: 300px;
+                }
+            }
+            .food-content {
+                width: 270px;
+                padding: 67px 50px 0;
+                color: $color-dark-gray;
+                cursor: pointer;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    transform: perspective(1500px) rotateY(15deg);
+                    background-color: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(10px);
+                }
+                @include breakpoint(small) {
+                    width: 50%;
+                    padding: 100px 20px;
+                    margin-bottom: 20px;
+                }
+                @include breakpoint(smaller) {
+                    width: 100%;
+                }
+                @include breakpoint(extrasmall) {
+                    padding: 50px 20px;
+                }
+                h4 {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: 17px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    line-height: 1.1;
+                }
+                span {
+                    font-size: 16.5px;
+                    font-weight: bold;
+                    color: $color-dark-gray;
+                }
+            }
+            .food-content-order {
+                @include breakpoint(small) {
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+
+//Cuisine Wrapper
+.cuisine-wrapper {
+    position: relative;
+    background: #d4d8d9;
+    padding: 91px 0 57px 0;
+    .vector2 {
+        width: 242px;
+        height: 400px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        @include breakpoint(small) {
+            display: none;
+        }
+    }
+    .vector1 {
+        width: 242px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint(small) {
+            display: none;
+        }
+    }
+    .tab-content {
+        text-align: center;
+        z-index: 9;
+        position: relative;
+        color: $color-gray;
+        h3 {
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+        p {
+            line-height: 1.74;
+            width: 692px;
+            max-width: 100%;
+            margin: 0 auto;
+            letter-spacing: -0.2px;
+        }
+    }
+    .tab-circle {
+        justify-content: center;
+        margin-top: 42px;
+        border-bottom: none;
+        li {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background: $color-gray;
+            margin: 0 2px;
+            a {
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+            }
+        }
+        .active {
+            background: $color-dark-yellow;
+        }
+    }
+    .tab-button {
+        justify-content: center;
+        z-index: 9;
+        margin-top: 40px;
+        border-bottom: none;
+        li {
+            margin: 0 26px;
+            @include breakpoint(extrasmall) {
+                margin: 0 10px;
+            }
+            a {
+                font-size: 17px;
+                font-weight: bold;
+                color: $color-gray;
+                letter-spacing: -0.2px;
+            }
+        }
+        .active {
+            color: $color-dark-yellow;
+        }
+    }
+}
+
+//Our new food menu items
+.food-menu-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 238px;
+    .container {
+        max-width: 1275px;
+    }
+    .menu-bg {
+        background-color: rgba(255, 255, 255, 0.82);
+        padding-bottom: 13px;
+        @include breakpoint(medium) {
+            padding-bottom: 0;
+        }
+        .heading {
+            text-align: center;
+            padding-top: 36px;
+            margin-bottom: 38px;
+            @include breakpoint(medium) {
+                padding-top: 30px;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-family: $font-family-cookie;
+                color: $color-dark-gray;
+                line-height: 1;
+                letter-spacing: -0.2px;
+                @include breakpoint(medium) {
+                    line-height: 1.5;
+                }
+            }
+            span {
+                font-size: 48px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $color-dark-yellow;
+                line-height: 0.5;
+                letter-spacing: -0.5px;
+                @include breakpoint(medium) {
+                    font-size: 45px;
+                }
+                @include breakpoint(extrasmall) {
+                    font-size: 30px;
+                }
+            }
+        }
+        .menu-section {
+            margin-bottom: 54px;
+            cursor: pointer;
+            &:hover h4 {
+                color: $color-dark-yellow;
+            }
+            &:hover .menu-circle {
+                background-color: $color-dark-yellow;
+            }
+            @include breakpoint(medium) {
+                margin-bottom: 30px;
+                flex-direction: column;
+            }
+        }
+        .menu-rg {
+            .menu-section {
+                margin-left: 129px;
+                @include breakpoint(wide) {
+                    margin-left: 0;
+                }
+                .menu-items {
+                    margin-right: 10px;
+                    @include breakpoint(medium) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .menu-items {
+            flex: 0 0 15%;
+            .menu-circle {
+                width: 81px;
+                height: 81px;
+                background: #fff;
+                border-radius: 50%;
+                position: relative;
+                transition: 0.5s ease-in-out;
+                .icon-image {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .icon-content {
+            @include breakpoint(medium) {
+                margin-top: 10px;
+            }
+            h4 {
+                font-weight: bold;
+                color: $color-dark-gray;
+                text-transform: uppercase;
+                letter-spacing: -0.2px;
+                transition: 0.5s ease-in-out;
+            }
+            p {
+                margin-top: 10px;
+                line-height: 1;
+                width: 331px;
+                max-width: 100%;
+                letter-spacing: -0.9px;
+                word-break: break-all;
+                color: $color-dark-gray;
+            }
+        }
+    }
+}
+
+//Flavour background wrapper
+.flavour-image-wrapper,
+.flavour-image2-wrapper {
+    width: 100%;
+    height: 889px;
+    @include breakpoint(medium) {
+        height: 100%;
+    }
+}
+
+//Book your seat
+.reservation-wrapper {
+    padding: 58px 0 71px 0;
+    background-color: $color-gray;
+    .container {
+        max-width: 1275px;
+    }
+    .heading {
+        text-align: center;
+        margin-bottom: 37px;
+        h2 {
+            color: $color-accent-white;
+            font-family: $font-family-cookie;
+            line-height: 0.5;
+        }
+    }
+
+    .form-control {
+        display: inline-block;
+        width: 19%;
+        max-width: 100%;
+        color: $color-accent-white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        margin-bottom: 40px;
+
+        @include breakpoint(medium) {
+            width: 48%;
+        }
+        @include breakpoint(extrasmall) {
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            letter-spacing: 0.8px;
+        }
+        input {
+            width: 100%;
+            color: $color-accent-white;
+            border-radius: 8px;
+            height: 32px;
+            background-color: transparent;
+            border: 1px solid $color-accent-white;
+            outline: none;
+            padding-left: 9px;
+            letter-spacing: 0.5px;
+            &::placeholder {
+                color: $color-accent-white;
+            }
+        }
+        .date-control {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("assets/images/date.png");
+                width: 20px;
+                height: 20px;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                -webkit-appearance: none;
+                background: transparent;
+            }
+        }
+        .time-control {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("assets/images/time.png");
+                width: 20px;
+                height: 20px;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+            input[type="time"]::-webkit-calendar-picker-indicator {
+                -webkit-appearance: none;
+                background: transparent;
+            }
+        }
+        .select-wrap {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("assets/images/down-arrow.png");
+                width: 13px;
+                height: 11px;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+        }
+        .custom-select {
+            display: inline-block;
+            width: 100%;
+            height: 32px;
+            padding: 0 0 0 9px;
+            line-height: 1.5;
+            color: $color-accent-white;
+            vertical-align: middle;
+            background: $color-gray;
+            background-size: none;
+            border: 1px solid $color-accent-white;
+            border-radius: 8px;
+            appearance: none;
+            outline: none;
+            letter-spacing: 1px;
+            position: relative;
+        }
+    }
+    #date {
+        margin-left: 21.3%;
+        margin-right: 14.5%;
+        @include breakpoint(medium) {
+            margin-left: 3%;
+            margin-right: 0;
+        }
+        @include breakpoint(extrasmall) {
+            margin-left: 0;
+        }
+    }
+    #email {
+        margin-left: 21.3%;
+        margin-right: 14.5%;
+        @include breakpoint(medium) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    #name {
+        @include breakpoint(medium) {
+            margin-left: 3%;
+        }
+        @include breakpoint(extrasmall) {
+            margin-left: 0;
+        }
+    }
+    #phone {
+        @include breakpoint(medium) {
+            margin-left: 3%;
+        }
+        @include breakpoint(extrasmall) {
+            margin-left: 0;
+        }
+    }
+    .form-button {
+        width: 100%;
+        text-align: center;
+        margin: 12px 0 0 0;
+        button {
+            background: transparent;
+            color: #fff;
+            padding: 0 86px;
+            border-radius: 8px;
+            border: 1px solid #fff;
+            height: 32px;
+            outline: none;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: $color-dark-yellow;
+            }
+        }
+    }
+}
+
+//Food Menu Grid Wrapper
+.menu-grid-wrapper {
+    padding: 36px 0 93px 0;
+    background: #d4d8d9;
+    @include breakpoint(medium) {
+        padding: 50px 0 20px 0;
+    }
+    .heading {
+        text-align: center;
+        margin-bottom: 55px;
+        @include breakpoint(medium) {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: $font-family-cookie;
+            color: $color-dark-gray;
+            line-height: 1;
+            @include breakpoint(medium) {
+                line-height: 1.5;
+            }
+        }
+        span {
+            font-size: 48px;
+            font-weight: 600;
+            color: $color-dark-yellow;
+            text-transform: uppercase;
+            line-height: 0.5;
+            @include breakpoint(medium) {
+                font-size: 45px;
+            }
+            @include breakpoint(extrasmall) {
+                font-size: 30px;
+            }
+        }
+    }
+    .col-md-6 {
+        margin-bottom: 30px;
+    }
+    .menu-detail {
+        height: 100%;
+        width: 339px;
+        background: $color-accent-white;
+        cursor: pointer;
+        &:hover {
+            .menu-content {
+                span,
+                a {
+                    color: $color-dark-yellow;
+                }
+            }
+        }
+        @include breakpoint(wide) {
+            width: 100%;
+        }
+        @include breakpoint(medium) {
+            margin-bottom: 30px;
+            margin: 0 auto;
+        }
+        .menu-image {
+            height: 296px;
+            overflow: hidden;
+            img {
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .menu-content {
+            padding: 18px 65px 26px 21px;
+            @include breakpoint(medium) {
+                padding-right: 21px;
+            }
+            span {
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 0.8px;
+                color: #555555;
+                transition: 0.5s ease-in-out;
+            }
+            h4 {
+                font-size: 17px;
+                font-weight: bold;
+                color: #4f4e4e;
+                margin-top: 17px;
+                letter-spacing: -0.2px;
+            }
+            p {
+                font-size: 17px;
+                color: #4f4e4e;
+                // width: 242px;
+                // max-width: 100%;
+                word-break: break-all;
+                margin-bottom: 8px;
+            }
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 2.36;
+                color: #555555;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-bottom: 7px solid #ff992b;
+                padding-bottom: 5px;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+//hero wrapper
+.hero-wrapper {
+    background: $color-gray;
+    padding: 48px 0;
+    text-align: center;
+    .slider-image {
+        width: 28px;
+        height: 22px;
+        margin: 0 auto;
+    }
+    .slider-content {
+        margin: 28px 0 32px 0;
+        color: $color-accent-white;
+        p {
+            width: 692px;
+            max-width: 100%;
+            line-height: 1.74;
+            margin: 0 auto;
+            letter-spacing: -0.2px;
+        }
+        h4 {
+            line-height: 1.74;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    }
+    .social-link {
+        text-align: center;
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-right: 25px;
+            li {
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                background: $color-accent-white;
+                position: relative;
+                margin: 0 12.5px;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+                @include breakpoint(extrasmall) {
+                    height: 30px;
+                    width: 30px;
+                }
+                &:hover {
+                    background: $color-dark-yellow;
+                }
+                &:hover a {
+                    color: $color-accent-white;
+                }
+                a {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 32px;
+                    color: $color-gray;
+                    transition: 0.5s ease-in-out;
+                    @include breakpoint(extrasmall) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

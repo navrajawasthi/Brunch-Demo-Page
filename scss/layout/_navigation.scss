@@ -1,0 +1,147 @@
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 58px 0;
+  @include breakpoint(medium){
+    padding: 20px 0;
+  }
+  .logo {
+    width: 146px;
+    height: 26px;
+    z-index: 9999;
+    position: relative;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-right: 22px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.78);
+        letter-spacing: -0.2px;
+        transition: 0.5s ease-in-out;
+        position: relative;
+        &:hover {
+          color: $color-dark-yellow;
+        }
+        &:after {
+          @include line-animation();
+        }
+        &:hover:after {
+          @include line-animation-hover();
+        }
+      }
+    }
+  }
+  &.active_sticky {
+    background: $color-gray;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.5s ease;
+    padding: 20px 0;
+  }
+  &.nav-up {
+    top: -200px;
+  }
+}
+
+// Media Query
+@include breakpoint(wide) {
+  .menu-toggle {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    z-index: 99;
+    top: -19px;
+    @include breakpoint(medium) {
+      top: -30px;
+    }
+  }
+  .menu-toggle span {
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: $color-dark-yellow;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  .active-responsive-menu span:nth-child(1) {
+    transform: rotate(135deg);
+    position: absolute;
+    top: 10px;
+  }
+  .active-responsive-menu span:nth-child(2) {
+    display: none;
+  }
+  .active-responsive-menu span:nth-child(3) {
+    transform: rotate(-135deg);
+    margin-top: 18px;
+  }
+  .active-responsive-menu {
+    overflow: hidden;
+  }
+  nav {
+    background-color: $color-gray;
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .active-responsive-menu nav {
+    position: fixed;
+    bottom:0;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+    z-index: 9;
+    transition: 0.8s ease-in-out;
+  }
+  .active-responsive-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 15px;
+  }
+  .active-responsive-menu nav ul li {
+    display: block;
+    padding: 50px 0 0 0;
+    transition: 1s ease;
+    margin-right: 0;
+    @include breakpoint(extrasmall) {
+      padding: 20px 0 0 0;
+    }
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .active-responsive-menu nav ul :nth-child(1) {
+    transition-delay: 0.2s;
+  }
+  .active-responsive-menu nav ul :nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .active-responsive-menu nav ul :nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  .active-responsive-menu nav ul :nth-child(4) {
+    transition-delay: 0.5s;
+  }
+}

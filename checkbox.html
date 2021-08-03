@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <title>CheckBox</title>
+    <style>
+        .checkbox-wrapper{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="checkbox"]{
+            appearance: none;
+            height: 80px;
+            width: 80px;
+            border: 1px solid blue;
+            background: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+        }
+        label{
+            color: #4c4c4c;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+        input[type="checkbox"]:after{
+            content: '\f00c';
+            font-family: 'fontAwesome';
+            font-size: 50px;
+            color: #fff;
+            display: none;
+        }
+        input[type="checkbox"]:checked{
+            background: #5bcd3e;
+        }
+        input[type="checkbox"]:checked:after{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkbox-wrapper">
+        <input type="checkbox" id="check">
+        <label for="check">Car</label>
+        <input type="checkbox" id="check">
+        <label for="check">Bike</label>
+        <input type="checkbox" id="check">
+        <label for="check">Truck</label>
+    </div>
+</body>
+</html>
