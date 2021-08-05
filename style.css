@@ -10741,6 +10741,12 @@ img {
   @media (max-width: 374px) {
     .banner-wrapper {
       height: 400px; } }
+  .banner-wrapper .cloud {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(-20%);
+    width: 40%; }
   .banner-wrapper .banner-content {
     position: absolute;
     left: 50%;

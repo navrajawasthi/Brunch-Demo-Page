@@ -48,10 +48,13 @@
     <!-- banner wrapper -->
     <section class="banner-wrapper" style="background-image: url('assets/images/banner.png');">
         <div class="container">
+            <div class="cloud">
+                <img src="assets/images/Cloud.png" alt="Cloud">
+            </div>
             <div class="banner-content">
-                <h1>brunch</h1>
-                <span>full website</span>
-                <a href="#">read more</a>
+                <h1 class="banner-text">brunch</h1>
+                <span class="banner-text">full website</span>
+                <a class="banner-text" href="#">read more</a>
             </div>
         </div>
     </section>
@@ -62,7 +65,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="powder-content">
-                        <h3>Indian traditional flavours</h3>
+                        <h3 id="chalau"> Indian traditional flavours</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
@@ -119,8 +122,8 @@
         <div class="container">
             <div class="food-detail">
                 <div class="food-heading">
-                    <h2>India</h2>
-                    <span>on your plate</span>
+                    <h2 class="food-text">India</h2>
+                    <span class="food-text">on your plate</span>
                 </div>
                 <div class="list-item animate__animated wow animate__fadeIn animate__delay-0.8s">
                     <div class="food-image">
@@ -201,7 +204,7 @@
             <img src="assets/images/vector1.png" alt="Shape">
         </div>
         <div class="container">
-            <div class="tab-content animate__animated wow animate__fadeIn animate__delay-0.8s">
+            <div class="tab-content">
                 <div id="meal" class="tab-pane active">
                     <h3>Traditional cuisine made easy</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -231,12 +234,12 @@
                     </p>
                 </div>
             </div>
-            <ul class="nav nav-tabs tab-circle animate__animated wow animate__fadeInLeft animate__delay-0.8s">
+            <ul class="nav nav-tabs tab-circle">
                 <li><a class="active" data-toggle="tab" href="#meal"></a></li>
                 <li><a data-toggle="tab" href="#spices"></a></li>
                 <li><a data-toggle="tab" href="#book"></a></li>
             </ul>
-            <ul class="nav nav-tabs tab-button animate__animated wow animate__fadeInRight animate__delay-0.8s">
+            <ul class="nav nav-tabs tab-button">
                 <li><a class="active" data-toggle="tab" href="#meal">Meal</a></li>
                 <li><a data-toggle="tab" href="#spices">Spices</a></li>
                 <li><a data-toggle="tab" href="#book">Book</a></li>
@@ -249,14 +252,14 @@
     <section class="food-menu-wrapper" style="background-image: url('assets/images/discover-img.png');">
         <div class="menu-bg">
             <div class="container">
-                <div class="heading animate__animated wow animate__fadeInUp animate__delay-0.8s">
-                    <h2>Discover</h2>
-                    <span>our new menu</span>
+                <div class="heading">
+                    <h2 class="food-menu-text">Discover</h2>
+                    <span class="food-menu-text">our new menu</span>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.3s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon1.png" alt="Chicken Tikka">
@@ -264,14 +267,14 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.3s">
+                            <div class="icon-content">
                                 <h4>Tikka chicken</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$14.95</span></p>
                             </div>
                         </div>
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.5s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon3.png" alt="PLAIN PAPADUMS">
@@ -279,14 +282,14 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.5s">
+                            <div class="icon-content">
                                 <h4>PLAIN PAPADUMS</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$1.95</span></p>
                             </div>
                         </div>
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.7s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon5.png" alt="CHicken curry">
@@ -294,7 +297,7 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.7s">
+                            <div class="icon-content">
                                 <h4>CHicken curry</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$12.95</span></p>
@@ -303,7 +306,7 @@
                     </div>
                     <div class="col-lg-6 menu-rg">
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.9s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon2.png" alt="SOUP OF the day">
@@ -311,14 +314,14 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.9s">
+                            <div class="icon-content">
                                 <h4>SOUP OF the day</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$7.95</span></p>
                             </div>
                         </div>
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.11s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon4.png" alt="YELLOW CURRY">
@@ -326,14 +329,14 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.11s">
+                            <div class="icon-content">
                                 <h4>YELLOW CURRY</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$15.95</span></p>
                             </div>
                         </div>
                         <div class="menu-section d-flex">
-                            <div class="menu-items animate__animated wow animate__fadeInUp animate__delay-0.13s">
+                            <div class="menu-items">
                                 <div class="menu-circle">
                                     <div class="icon-image">
                                         <img src="assets/images/icon6.png" alt="SPICY MEatballs">
@@ -341,7 +344,7 @@
                                 </div>
 
                             </div>
-                            <div class="icon-content animate__animated wow animate__fadeInUp animate__delay-0.13s">
+                            <div class="icon-content">
                                 <h4>SPICY MEatballs</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit sed do oculis <span>$18.95</span></p>
@@ -360,7 +363,7 @@
     <!-- Book your seat -->
     <section class="reservation-wrapper">
         <div class="container">
-            <div class="heading animate__animated wow animate__fadeInUp animate__delay-0.8s">
+            <div class="heading">
                 <h2>Book here</h2>
             </div>
             <form action="" class="animate__animated wow animate__fadeIn animate__delay-0.8s">
@@ -424,13 +427,13 @@
     <!-- Food Menu Grid Wrapper -->
     <section class="menu-grid-wrapper">
         <div class="container">
-            <div class="heading animate__animated wow animate__fadeInUp animate__delay-0.8s">
-                <h2>Discover</h2>
-                <span>our new menu</span>
+            <div class="heading">
+                <h2 class="menu-grid-text">Discover</h2>
+                <span class="menu-grid-text">our new menu</span>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="menu-detail animate__animated wow animate__fadeIn animate__delay-0.8s">
+                    <div class="menu-detail">
                         <div class="menu-image">
                             <img src="assets/images/menu1.png" alt="Food">
                         </div>
@@ -444,7 +447,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="menu-detail animate__animated wow animate__fadeIn animate__delay-0.8s">
+                    <div class="menu-detail">
                         <div class="menu-image">
                             <img src="assets/images/menu2.png" alt="Spices">
                         </div>
@@ -458,7 +461,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="menu-detail animate__animated wow animate__fadeIn animate__delay-0.8s">
+                    <div class="menu-detail">
                         <div class="menu-image">
                             <img src="assets/images/menu3.png" alt="Chicken Curry">
                         </div>

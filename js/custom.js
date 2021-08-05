@@ -89,12 +89,28 @@ $(window).on('load', function () {
 
 
 //gsap animation
+gsap.from('.banner-text', { scrollTrigger: '.banner-text', opacity: 0, y: "50px", duration: 1, ease: "power1.out", stagger: 1 })
+gsap.from('.powder-content', { scrollTrigger: '.powder-content', y: "100px", duration: 1, backgroundPosition: "200px 0", ease: "power1.out" })
+gsap.from('.powder-image', { scrollTrigger: '.powder-image', x: "100px",duration: 1, ease: "power1.out" })
+gsap.from('.we-serves', { scrollTrigger: '.we-serves', y: "100px", duration: 1, ease: "power2.out" })
+gsap.from('.food-text', { scrollTrigger: '.food-text', opacity:0, y: "50px", duration: 1, ease: "power1.out", stagger: 1 })
+gsap.from('.tab-pane', { scrollTrigger: '.tab-pane', duration: 2, y: "50px", ease: "power1.out" })
+gsap.from('.food-menu-text', { scrollTrigger: '.food-menu-text', opacity:0, y: "50px", duration: 1, ease: "power1.out", stagger: 1 })
+gsap.from('.tab-circle', { scrollTrigger: '.tab-circle', duration: 2, x: "100px", ease: "power1.out" })
+gsap.from('.tab-button', { scrollTrigger: '.tab-button', duration: 2, x: "-100px", ease: "power1.out" })
+gsap.from('.menu-items', { scrollTrigger: '.menu-items', duration: 1, y: "20px", ease: "power1.out" })
+gsap.from('.icon-content', { scrollTrigger: '.icon-content', duration: 1, y: "20px", ease: "power1.out" })
+gsap.from('.reservation-wrapper h2', { scrollTrigger: '.reservation-wrapper h2', duration: 1, y: "30px", ease: "power1.out" })
+gsap.from('.menu-grid-text', { scrollTrigger: '.menu-grid-text', opacity:0, y: "50px", duration: 1, ease: "power1.out", stagger: 1 })
+gsap.from('.menu-detail', { scrollTrigger: '.menu-detail', duration: 1, y: "100px", ease: "power1.out" })
 
-gsap.from('.banner-content h1, span, a', {scrollTrigger:'.banner-content h1, span, a', duration: 1, opacity: 0, delay: 1.5, stragger: 1 })
-gsap.from('.powder-content', { scrollTrigger: '.powder-content', y: "100px", ease: "power1.out" })
-gsap.from('.powder-image', { scrollTrigger: '.powder-image', x: "100px", ease: "power1.out" })
-gsap.from('.we-serves', { scrollTrigger: '.we-serves', y: "100px", ease: "power2.in" })
-gsap.from('.food-heading', { scrollTrigger: '.food-heading', y: "100px", ease: "bounce"})
 
-
+gsap.to('.cloud', {
+  scrollTrigger: {
+    scrub: 1,
+  },
+  x: "400px",
+  duration: 1,
+  ease: "power1.out"
+})
 
