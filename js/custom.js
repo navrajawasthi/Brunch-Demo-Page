@@ -91,7 +91,10 @@ $(window).on('load', function () {
 //gsap animation
 
 gsap.from('.banner-content h1, span, a', {scrollTrigger:'.banner-content h1, span, a', duration: 1, opacity: 0, delay: 1.5, stragger: 1 })
-gsap.from('.powder-content', { scrollTrigger: '.powder-content', y: "100px", ease: "power1.out"})
+gsap.from('.powder-content', { scrollTrigger: '.powder-content', y: "100px", ease: "power1.out" })
+gsap.from('.powder-image', { scrollTrigger: '.powder-image', x: "100px", ease: "power1.out" })
+gsap.from('.we-serves', { scrollTrigger: '.we-serves', y: "100px", ease: "power2.in" })
+gsap.from('.food-heading', { scrollTrigger: '.food-heading', y: "100px", ease: "bounce"})
 
 
 
