@@ -88,4 +88,10 @@ $(window).on('load', function () {
 });
 
 
+//gsap animation
+
+gsap.from('.banner-content h1, span, a', {scrollTrigger:'.banner-content h1, span, a', duration: 1, opacity: 0, delay: 1.5, stragger: 1 })
+gsap.from('.powder-content', { scrollTrigger: '.powder-content', y: "100px", ease: "power1.out"})
+
+
 
